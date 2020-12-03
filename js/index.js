@@ -37,6 +37,42 @@ const siteContent = {
   },
 };
 
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// LINKS
+let A1 = document.getElementsByTagName('A')[0];
+A1.append(siteContent["nav"]["nav-item-1"]);
+
+let A2 = document.getElementsByTagName('A')[1];
+A2.append(siteContent["nav"]["nav-item-2"]);
+
+let A3 = document.getElementsByTagName('A')[2];
+A3.append(siteContent["nav"]["nav-item-3"]);
+
+let A4 = document.getElementsByTagName('A')[3];
+A4.append(siteContent["nav"]["nav-item-4"]);
+
+let A5 = document.getElementsByTagName('A')[4];
+A5.append(siteContent["nav"]["nav-item-5"]);
+
+let A6 = document.getElementsByTagName('A')[5];
+A6.append(siteContent["nav"]["nav-item-6"]);
+
+// CTA
+
+let bigWords = document.getElementsByClassName('cta-text')[0].getElementsByTagName('H1')[0];
+bigWords.append(siteContent['cta']['h1']);
+let lineBreak = document.createElement("br");
+
+
+let getStartedButton = document.getElementsByClassName("cta-text")[0].getElementsByTagName("BUTTON")[0];
+getStartedButton.append(siteContent['cta']['button']);
+
+
+
+//middle image
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
